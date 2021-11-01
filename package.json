@@ -1,0 +1,28 @@
+{
+  "name": "exercicio_cicd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RenatoGSouza/exercicio_cicd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RenatoGSouza/exercicio_cicd/issues"
+  },
+  "homepage": "https://github.com/RenatoGSouza/exercicio_cicd#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.1.0",
+    "eslint-config-trybe-backend": "^1.0.4"
+  }
+}
