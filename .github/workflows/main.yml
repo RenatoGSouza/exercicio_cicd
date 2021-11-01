@@ -1,14 +1,10 @@
-on: [push, pull_request]
+name: Lint
+
+on: [push]
 
 jobs:
   eslint:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1.4.4
-        with:
-          node-version: '12'
-      - name: ESLint
-        uses: betrybe/eslint-linter-action@v2.1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v1
+      - uses: stefanoeb/eslint-action@1.0.2
