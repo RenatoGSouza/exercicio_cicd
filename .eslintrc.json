@@ -10,7 +10,7 @@
         "SharedArrayBuffer": "readonly"
     },
     "parserOptions": {
-        "ecmaVersion": "latest"
+        "ecmaVersion": 2018
     },
     "rules": {
     }
