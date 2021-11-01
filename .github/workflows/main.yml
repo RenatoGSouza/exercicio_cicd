@@ -10,3 +10,5 @@ jobs:
           node-version: '12'
       - name: ESLint
         uses: betrybe/eslint-linter-action@v2.1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
