@@ -25,6 +25,7 @@ jobs:
   evaluator:
     name: Evaluator
     needs: [run-linters]
+    runs-on: ubuntu-latest
     steps:
       - name: evaluator 
         run: echo "tudo certo"
