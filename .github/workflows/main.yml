@@ -22,10 +22,10 @@ jobs:
 
       - name: Run linters
         run: eslint --no-inline-config --ext .js --no-error-on-unmatched-pattern -c .eslintrc.json .
-  evaluator:
-    name: Evaluator
-    needs: [run-linters]
-    runs-on: ubuntu-latest
-    steps:
-      - name: evaluator 
-        run: echo "tudo certo"
+  # evaluator:
+  #   name: Evaluator
+  #   needs: [run-linters]
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: evaluator 
+  #       run: echo "tudo certo"
