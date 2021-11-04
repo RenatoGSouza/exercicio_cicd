@@ -16,12 +16,12 @@ jobs:
           node-version: 14
 
 
-      - name: configura o lint
+      - name: instalando as dependencias
         run: npm install
 
-      - name: executa o lint para verificar
-        run: npx eslint .
-        # run: eslint --no-inline-config --ext .js --no-error-on-unmatched-pattern -c .eslintrc.json .
+      - name: executa o lint para verificar se há erros
+        # run: npx eslint .
+        run: eslint --no-inline-config --ext .js --no-error-on-unmatched-pattern -c .eslintrc.json .
   # evaluator:
   #   name: Evaluator
   #   needs: [run-linters]
