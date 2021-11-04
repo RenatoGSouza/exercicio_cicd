@@ -17,7 +17,7 @@ jobs:
 
 
       - name: configura o lint
-        run: npm install -g eslint -y
+        run: npm install eslint -y
 
       - name: executa o lint para verificar
         run: npx eslint .
