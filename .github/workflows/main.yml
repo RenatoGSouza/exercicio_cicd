@@ -1,26 +1,25 @@
 name: Lint
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
-  run-linters:
-    name: Run linters
+  eslint:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out Git repository
+      - name: Verifica o repositorio do Git 
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
+      - name: Instala o node com a versão
         uses: actions/setup-node@v1
         with:
           node-version: 14
 
 
-      - name: setup linter
+      - name: configura o lint
         run: npm install -g eslint -y
 
-      - name: Run linters
+      - name: executa o lint para verificar
         run: eslint --no-inline-config --ext .js --no-error-on-unmatched-pattern -c .eslintrc.json .
   # evaluator:
   #   name: Evaluator
