@@ -20,7 +20,8 @@ jobs:
         run: npm install -g eslint -y
 
       - name: executa o lint para verificar
-        run: eslint --no-inline-config --ext .js --no-error-on-unmatched-pattern -c .eslintrc.json .
+        run: npx eslint .
+        # run: eslint --no-inline-config --ext .js --no-error-on-unmatched-pattern -c .eslintrc.json .
   # evaluator:
   #   name: Evaluator
   #   needs: [run-linters]
